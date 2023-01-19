@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url('./images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: hsl(0, 100%, 100%);
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.container {
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+p, button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    padding-block: 3rem;
+}
+
+header img {
+    width: 200px;
+}
+
+section#main {
+    display: flex;
+    column-gap: 2.5rem;
+    margin-block-end: 2rem;
+}
+
+section > div.mock-up {
+    flex-basis: 50%;
+}
+
+section > div.cta-container {
+    flex-basis: 50%;
+    padding-block: 2rem;
+}
+
+div.cta-container h2.cta-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+h2.cta-title, p.cta-desc-text {
+    margin-block-end: 1rem;
+
+}
+
+div.cta-container > p.cta-desc-text {
+    margin-block-end: 1rem;
+}
+
+div.cta-container > .button .btn {
+    padding-inline: 3.5rem;
+    padding-block: 1rem;
+    border-radius: 2rem;
+    border: none;
+    color:hsl(257, 40%, 49%);
+    box-shadow: 2px 2px 10px black;
+    transition: all 1s ease;
+}
+
+div.icons {
+    grid-area: icons;
+    padding-block: 1rem;
+    text-align: end;
+}
+
+div.icons > span > svg {
+    width: 30px;
+    fill:hsl(0, 100%, 100%);
+    transition: all 1s ease;
+    display: inline-block;
+}
+
+div.icons > span > svg:hover, .button .btn:hover {
+    cursor: pointer;
+}
+
+div.icons > span > svg:hover, 
+div.icons > span > svg:focus {
+    fill: hsl(300, 69%, 71%);
+}
+
+div.cta-container > .button .btn:hover, 
+div.cta-container > .button .btn:focus {
+    background-color: hsl(300, 69%, 71%);
+    color: hsl(0, 100%, 100%);
+}
+
+
+@media screen and (max-width: 450px) {
+    body {
+        background-image: url('./images/bg-mobile.svg');
+    }
+    section#main {
+        display: flex;
+        flex-direction: column;
+        margin-block-end: 0;
+        text-align: center;
+    }
+
+    h2.cta-title {
+        text-align: center;
+    }
+
+    div.icons {
+        text-align: center;
+    }
+}

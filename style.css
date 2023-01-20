@@ -68,7 +68,7 @@ div.cta-container > p.cta-desc-text {
     margin-block-end: 1rem;
 }
 
-div.cta-container > .button .btn {
+div.cta-container > button.btn {
     padding-inline: 3.5rem;
     padding-block: 1rem;
     border-radius: 2rem;
@@ -91,7 +91,7 @@ div.icons > span > svg {
     display: inline-block;
 }
 
-div.icons > span > svg:hover, .button .btn:hover {
+div.icons > span > svg:hover, button.btn:hover {
     cursor: pointer;
 }
 
@@ -100,8 +100,8 @@ div.icons > span > svg:focus {
     fill: hsl(300, 69%, 71%);
 }
 
-div.cta-container > .button .btn:hover, 
-div.cta-container > .button .btn:focus {
+div.cta-container > button.btn:hover, 
+div.cta-container > button.btn:focus {
     background-color: hsl(300, 69%, 71%);
     color: hsl(0, 100%, 100%);
 }
